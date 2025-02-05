@@ -1,0 +1,18 @@
+### Hent alle turistattraktioner
+GET http://localhost:8080/attractions
+
+###
+
+### Tilføj en ny attraktion
+POST http://localhost:8080/attractions
+Content-Type: application/json
+
+{
+  "name": "Legoland",
+  "description": "Forlystelsespark i Billund"
+}
+
+###
+
+### Slet en attraktion
+DELETE http://localhost:8080/attractions/Legoland
